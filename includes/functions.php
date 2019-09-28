@@ -21,7 +21,7 @@ function getComic($link){
     curl_close($handle);
     echo '<h4> ' . $response['title'] . '<h4>';
     echo '<h4> ' . $response['year'] . '<h4>';
-    echo <img src="' . $response['img'] . '";
+    echo <img src="' . $response['img'] . '">;
     /*dont change
     */
 
