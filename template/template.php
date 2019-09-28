@@ -13,7 +13,7 @@
   </head>
   <body>
 
-    <h1><?php site_name(); ?></h1>
+    <!--<h1><?php site_name(); ?></h1> -->
 
 
 
