@@ -1,4 +1,42 @@
 <?php
+
+if (isset($_POST["random"])) {
+    randomComic():
+};
+
+function getComic($link){
+    $url = XKCDURL;
+    /**dont change
+    */
+    $handle = curl_init();
+    curl_setopt($handle, CURLOPT_URL, $url);
+    curl_setopt_array($handle,
+    array(
+    CURLOPT_URL => $link,
+    CURLOPT_RETURNTRANSFER => true
+    )
+    );
+    $output = curl_exec($handle);
+    $response = json_decode($output, true);
+    curl_close($handle);
+    echo '<h4> ' . $response['title'] . '<h4>';
+    echo '<h4> ' . $response['year'] . '<h4>';
+    echo <img src="' . $response['img'] . '";
+    /*dont change
+    */
+
+}
+
+function homeComic() {
+    $link = "https://xkcd.com/info.0.json";
+    getComic($link);
+}
+
+function randomComic() {
+    $rng = rand(1, 100);
+    $link = "https://xkcd.com/" . $rng . "/info.0.json";
+    getComic($link);
+}
 /**
  * Displays site name.
  */
