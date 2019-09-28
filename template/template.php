@@ -31,7 +31,7 @@
         <p class="lead">Your number one source for comics!!</p>
         <hr class="my-4">
         <p>Click the button below to choose another comic!</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Randomize!</a>
     </div>
 
     <article>

@@ -1,8 +1,8 @@
 
-article { 
-    padding: 40px; 
-    line-height: 150%; 
-    text-align: left; 
+article {
+    padding: 40px;
+    line-height: 150%;
+    text-align: left;
 }
 
 nav .item {
@@ -10,4 +10,7 @@ nav .item {
 }
 nav .active {
     border-bottom: 1px solid;
+}
+footer {
+    text-align: center;
 }
