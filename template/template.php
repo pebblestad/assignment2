@@ -19,9 +19,11 @@
 
     <header>
         <h1></h1>
-        <nav class="menu">
-            <?php nav_menu(); ?>
+        <nav class="navbar navbar-dark bg-dark">
+            <?php nav_menu(); ?>  
         </nav>
+            
+        
     </header>
 
     <div class="jumbotron">
