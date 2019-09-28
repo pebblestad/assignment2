@@ -12,7 +12,6 @@ function config($key = '')
         'site_url' => 'https://assignment2jstadtmueller.herokuapp.com',
         'nav_menu' => [
             '' => 'Home',
-            'about-us' => 'About Us',
             'contact' => 'Contact'
         ],
         'template_path' => 'template',
