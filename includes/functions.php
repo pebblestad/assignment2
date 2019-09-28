@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST["random"])) {
-    randomComic():
+    randomComic();
 };
 
 function getComic($link){
