@@ -15,15 +15,15 @@
 
     <h1><?php site_name(); ?></h1>
 
-    <div class="wrap">
+
 
     <header>
         <h1></h1>
         <nav class="navbar navbar-dark bg-dark">
-            <?php nav_menu(); ?>  
+            <?php nav_menu(); ?>
         </nav>
-            
-        
+
+
     </header>
 
     <div class="jumbotron">
@@ -42,7 +42,7 @@
     <footer>
         <small>&copy;<?php echo date('Y'); ?> <?php site_name(); ?>.<br><?php site_version(); ?></small>
     </footer>
-</div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
