@@ -26,7 +26,6 @@ function getComic($link){
 
 }
 
-}
 /**
  * Displays site name.
  */
