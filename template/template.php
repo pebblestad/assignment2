@@ -57,9 +57,9 @@
               url: "/includes/functions.php",
               data: {'random' : true},
               dataType:"HTML", // May be HTML or JSON as your wish
-              success: function(data)
+              success: function(result)
               {
-                  $('#randomComic').html(data) // The server's response is now placed inside your target div
+                  $('#randomComic').html(result) // The server's response is now placed inside your target div
               },
               error: function()
               {

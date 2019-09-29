@@ -19,23 +19,13 @@ function getComic($link){
     $output = curl_exec($handle);
     $response = json_decode($output, true);
     curl_close($handle);
-    echo '<h4> ' . $response['title'] . '<h4>';
-    echo '<h4> ' . $response['year'] . '<h4>';
+    echo '<h3> ' . $response['title'] . '<h3>';
+    echo '<h3> ' . $response['year'] . '<h3>';
     echo '<img src="' . $response['img'] . '" alt="nothing here">';
-    /*dont change
-    */
+    
 
 }
 
-function homeComic() {
-    $link = "https://xkcd.com/info.0.json";
-    getComic($link);
-}
-
-function randomComic() {
-    $rng = rand(1, 100);
-    $link = "https://xkcd.com/" . $rng . "/info.0.json";
-    getComic($link);
 }
 /**
  * Displays site name.
@@ -61,6 +51,13 @@ function site_version()
 /**
  * Website navigation.
  */
+
+
+function homeComic() {
+    $link = "https://xkcd.com/info.0.json";
+    getComic($link);
+}
+
 function nav_menu($sep = ' | ')
 {
     $nav_menu = '';
@@ -97,6 +94,12 @@ function page_content()
     /*echo file_get_contents($path); */
     require config('content_path') . '/' . $page . '.php';
 }
+
+function randomComic() {
+    $rng = rand(1, 100);
+    $link = "https://xkcd.com/" . $rng . "/info.0.json";
+    getComic($link);
+
 /**
  * Starts everything and displays the template.
  */
