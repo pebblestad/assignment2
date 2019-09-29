@@ -22,13 +22,10 @@ function getComic($link){
     echo '<h3> ' . $response['title'] . '<h3>';
     echo '<h3> ' . $response['year'] . '<h3>';
     echo '<img src="' . $response['img'] . '" alt="nothing here">';
-    
+
 
 }
 
-/**
- * Displays site name.
- */
 function site_name()
 {
     echo config('name');
@@ -106,4 +103,4 @@ function init()
 {
     require config('template_path') . '/template.php';
 }
-?>
+
