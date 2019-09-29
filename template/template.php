@@ -54,12 +54,12 @@
       $('#comicGenerator').click(function (){
           $.ajax({
               type: 'post',
-              url: "/includes/functions.php",
+              url: "../includes/functions.php",
               data: {'random' : true},
               dataType:"HTML", // May be HTML or JSON as your wish
-              success: function(result)
+              success: function(data)
               {
-                  $('#randomComic').html(result) // The server's response is now placed inside your target div
+                  $('#randomComic').html(data) // The server's response is now placed inside your target div
               },
               error: function()
               {
