@@ -1,8 +1,13 @@
 <?php
 	if(isset($_POST["random"]))
 	{
-	    getRandom();
+	    randomComic();
 	};
+
+    function randomComic(){
+	$rng = rand(1,1500);
+	$link = "https://xkcd.com/" . $rng . "/info.0.json";
+	getComic($link);
 
 	/* This Function is used to get the comic */
 	function getComic($link){
@@ -21,16 +26,12 @@
 	    echo '<h3> ' . $response['year'] . '</h3><br>';
 	    echo '<img src="' . $response['img'] . '" alt= "The picture cannot be shown for some reasons">';
 	}
-	/* Get the current comic */
-	function getTodays(){
-	    $url = "https://xkcd.com/info.0.json";
-	    getComic($url);
+
+	function homeComic(){
+	    $link = "https://xkcd.com/info.0.json";
+	    getComic($link);
 	}
-	/* Get random comic */
-	function getRandom(){
-	    $randNum = rand(1,2208);
-	    $url = "https://xkcd.com/" . $randNum . "/info.0.json";
-	    getComic($url);
+
 	}
 	/* Displays the site name */
 	function site_name()
