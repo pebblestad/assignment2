@@ -11,7 +11,7 @@ function config($key = '')
         'pretty_uri' => false,
         'site_url' => 'https://assignment2jstadtmueller.herokuapp.com',
         'nav_menu' => [
-            '' => 'Home',
+            'home' => 'Home',
             'random-comic' => 'Random Comic'
         ],
         'template_path' => 'template',
