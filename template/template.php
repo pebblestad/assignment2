@@ -27,11 +27,8 @@
         <hr class="my-4">
     </div>
 
-    <article>
-       <!-- <h2><?php page_title(); ?></h2> -->
-        <?php page_content(); ?>
-    </article>
-
+    <?php page_content(); ?>
+  
     <footer>
         <small>&copy;<?php echo date('Y'); ?> <?php site_name(); ?>.<br><?php site_version(); ?></small>
     </footer>
