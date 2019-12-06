@@ -5,7 +5,7 @@
 	};
 
     function randomComic(){
-	$rng = rand(1,1500);
+	$rng = rand(1,2237);
 	$link = "https://xkcd.com/" . $rng . "/info.0.json";
 	getComic($link);
     }

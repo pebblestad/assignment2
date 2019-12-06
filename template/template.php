@@ -50,6 +50,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       $('#comicGenerator').click(function (){
+          alert("hello");
           $.ajax({
               type: 'post',
               url: "../includes/functions.php",
@@ -57,7 +58,7 @@
               dataType:"HTML", // May be HTML or JSON as your wish
               success: function(data)
               {
-                  $('#randomComic').html(data) // The server's response is now placed inside your target div
+                  $('#rngComic').html(data) // The server's response is now placed inside your target div
               },
               error: function()
               {
