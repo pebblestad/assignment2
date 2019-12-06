@@ -12,7 +12,7 @@ function config($key = '')
         'site_url' => 'https://assignment2jstadtmueller.herokuapp.com',
         'nav_menu' => [
             'home' => 'Home',
-            'random-comic' => 'Random Comic'
+            'randomcomic' => 'Random Comic'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
