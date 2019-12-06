@@ -8,6 +8,7 @@
 	$rng = rand(1,1500);
 	$link = "https://xkcd.com/" . $rng . "/info.0.json";
 	getComic($link);
+    }
 
 	/* This Function is used to get the comic */
 	function getComic($link){
@@ -24,7 +25,7 @@
 	    curl_close($handle);
 	    echo '<h3> ' . $response['title'] . '</h3><br>';
 	    echo '<h3> ' . $response['year'] . '</h3><br>';
-	    echo '<img src="' . $response['img'] . '" alt= "The picture cannot be shown for some reasons">';
+	    echo '<img src="' . $response['img'] . '" alt= "The picture...">';
 	}
 
 	function homeComic(){
@@ -32,7 +33,7 @@
 	    getComic($link);
 	}
 
-	}
+	
 	/* Displays the site name */
 	function site_name()
 	{
