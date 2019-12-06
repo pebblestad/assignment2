@@ -14,3 +14,8 @@ nav .active {
 footer {
     text-align: center;
 }
+
+img {
+    display: block;
+    width: -webkit-fill-available;
+}

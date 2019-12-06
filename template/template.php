@@ -11,12 +11,7 @@
 
     <title>Assignment 2</title>
   </head>
-  <body>
-
-    <!--<h1><?php site_name(); ?></h1> -->
-
-
-
+  <body class="container text-center">
     <header>
         <h1></h1>
         <nav class="navbar navbar-dark bg-dark">
@@ -50,7 +45,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       $('#comicGenerator').click(function (){
-          alert("hello");
           $.ajax({
               type: 'post',
               url: "../includes/functions.php",
